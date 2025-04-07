@@ -1,0 +1,89 @@
+/* 
+   Estilos generales 
+   - Monospace con tamaño de fuente mayor (ej. 18px)
+*/
+body {
+    font-family: monospace;
+    font-size: 18px;
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Campo de texto y botón */
+  input[type="text"] {
+    padding: 8px;
+    width: 250px;
+    font-size: 1em;
+    max-width: 90%; /* Evita desbordar en pantallas pequeñas */
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 1em;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* 
+     Tabla responsiva:
+     - Ocupa el ancho disponible hasta su max-width
+     - Centra su contenido
+  */
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    text-align: center; 
+  }
+  
+  /* Celdas sin bordes de caja */
+  td {
+    padding: 8px 12px;
+    border: none;
+    min-width: 40px;
+  }
+  
+  /* 
+     Columna del divisor con borde vertical 
+     (para mostrar el divisor a la derecha)
+  */
+  td.divisor {
+    font-weight: bold;
+    border-left: 2px solid #000; /* Línea vertical continua */
+  }
+  
+  /* 
+     --- ÚLTIMA FILA EN UN CUADRO VERDE (#26E600) ---
+     Usamos outline para un borde alrededor de la fila,
+     y fondo blanco para que contraste con el borde verde.
+  */
+  tr.last-row {
+    outline: 3px solid #26E600; 
+    background-color: #fff; /* Aseguramos fondo blanco dentro del borde */
+  }
+  
+  /* Línea divisoria horizontal antes del resultado */
+  hr.divider {
+    border: none;
+    border-top: 2px solid #000;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  /* Resultado del M.C.D. */
+  p.result {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
